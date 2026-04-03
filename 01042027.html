@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang ="hr">
+<head>
+<title>Lucija Ćavar</title>
+<meta name="student" content="Lucija Cavar 2245/RR">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+	body{
+		background-color: #434343;
+	}
+	img{
+		float:left;
+		width: 78px;
+		height: 78px;
+		
+	}
+	.header{
+		grid-area: header;
+		background-color: #893752;
+		text-align: center;
+	}
+	.aside{
+		float: left;
+		grid-area: aside;
+	}
+	.aside ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	.aside li{
+		padding: 8px;
+		margin-bottom: 7px;
+		background-color: #FFE0E9;
+	}
+	.aside li:hover {
+		background-color: #c28695;
+	}
+	.main{
+		grid-area: main;
+		margin-left: 150px;
+		background-color: #403434;
+	}
+	.main > h1{
+		font-size: 30px;
+		margin-bottom: 7px;
+		margin-left: 5px;
+		color: #ceddbb;
+	}
+	.main > p{
+		margin-bottom: 7px;
+		margin-left: 5px;
+		color: #ceddbb;
+	}
+	table, th, td {
+		border:1px solid black;
+		text-align: center;
+		background-color: #ffe0e9;
+	}
+	
+	@media (min-width: 600px) {
+		.header {grid-area: 1 / span 6;}
+		.aside {grid-area: 2 / span 1;}
+		.main {grid-area: 2 / span 4;}
+	}
+
+	@media (min-width: 768px) {
+		.header {grid-area: 1 / span 6;}
+		.aside {grid-area: 2 / span 1;}
+		.main {grid-area: 2 / span 4;}
+	}
+	
+</style>
+</head>
+<body>
+	<div class = "header">
+		<img src="slika1.jpg" style="max-width:100%;height:auto;" alt="roza user ikona sa svijetlo rozom pozadinom">
+		<h1>Glavna stranica</h1>
+		<h2>Prva zadaća</h2>
+	</div>
+	<div class = "aside">
+		<ul>
+			<li><a href="" target ="_blank">Prva (ova) zadaća</a></li>
+			<li>w3schools</li>
+			<li>validator</li>
+		</ul>
+	</div>
+	<div class="main">
+		<h1>Prva zadaća</h1>
+		<p>Ovo je tijelo ove zadaće i ovdje piše nešto zanimljivo i korisno</p>
+		<p>Podatci o autoru: Lucija Ćavar, broj indeksa 2245/RR</p>
+		<p>Predmet: Razvoj Web Aplikacija</p>
+	<table style="width:100%">
+		<tr>
+			<td>ovo</td>
+			<td>je</td>
+			<td>
+				<a href ="https://www.w3schools.com/" target="_blank">w3schools stranica</a>
+			</td>
+		</tr>
+		<tr>
+			<td>ovo</td>
+			<td>je</td>
+			<td><a href="https://fsre.sum.ba/" target="_blank">FSRE stranica</a>
+			</td>
+		</tr>
+	</table>
+		
+	</div>
+</body>
+</html>
